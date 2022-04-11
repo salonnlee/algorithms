@@ -1,15 +1,6 @@
 // 回文链表 ( LeetCode 234 )
 
 /**
- * @param {any} val
- * @param {ListNode} next
- */
-function ListNode(val, next) {
-  this.val = val === undefined ? 0 : val;
-  this.next = next === undefined ? null : next;
-}
-
-/**
  * @param {ListNode} head
  * @return {ListNode}
  */
@@ -61,3 +52,12 @@ const isPalindrome = function (head) {
   firstHalfEnd.next = reverseList(secondHalfStart);
   return result;
 };
+
+/**
+ * @param {any} val
+ * @param {ListNode} next
+ */
+function ListNode(val, next) {
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
+}
